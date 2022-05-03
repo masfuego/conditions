@@ -3,12 +3,17 @@ import 'dart:io';
 
 void main() {
 
-  String greeting = "hello";
+  bool isSmart = true;
+  bool isStudent = false;
 
-  if(greeting.contains('e')){
-    print('the greeting contains e');
+  if(isSmart && isStudent){
+    print("you're a smart student");
+  } else if(isSmart && !isStudent){
+    print("you're smart but not a student");
+  } else if(!isSmart && isStudent){
+    print("you're not a smart student");
   } else {
-    print('the greeting does not contain e');
+    print("you're neither");
   }
   
 }
