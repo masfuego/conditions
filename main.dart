@@ -1,8 +1,8 @@
 import 'dart:math';
 import 'dart:io';
 
-String prompt(String enterWord){
-  print(enterWord);
+String prompt(String promptText){
+  print(promptText);
   String answer = stdin.readLineSync()!;
   return answer; 
 }
